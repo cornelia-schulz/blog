@@ -43,7 +43,7 @@ nav {
 .feature {
     position: relative;
     width: 100%;
-    min-height: 200px;
+    height: 500px;
     background: url('../images/McLarenFalls.jpg');
     background-size: cover;
 }
@@ -97,15 +97,6 @@ footer {
         height: 100%;
     }
 
-    .feature {
-        height: 400px;
-    }
-
 }
 
 
-@media only screen and (min-width: 960px) {
-    .feature {
-        height: 500px;
-    }
-}
