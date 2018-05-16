@@ -1,0 +1,53 @@
+* {
+    font-family: sans-serif;
+}
+
+nav {
+    border-bottom: 1px solid #eee;
+}
+
+.nav {
+    list-style-type: none;
+}
+
+.nav li {
+    display: inline;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.nav li a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#logo {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.container {
+    width: 100%;
+}
+
+.feature {
+    width: 100%;
+    height: 500px;
+    background: url('../images/McLarenFalls.jpg');
+    background-size: cover;
+}
+
+h2 {
+    margin-top: 2%;
+}
+
+.blog-row {
+    margin-top: 5%;
+}
+
+@media only screen and (min-width: 600px) {
+    .blog-image { 
+        height: 100%;
+    }
+
+}
