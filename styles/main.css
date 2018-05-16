@@ -76,8 +76,13 @@ h2 {
     margin-top: 5%;
 }
 
-.blog-image {
-    width: 100%;
+.blog-row a {
+    text-decoration: none;
+    color: #111111;
+}
+
+.blog-row a:hover {
+    color: #7e7e7e;
 }
 
 footer {
