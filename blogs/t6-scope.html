@@ -2,65 +2,131 @@
 <html lang="en">
 
 <head>
-    <title>Lost in Translation</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Blog for code newbies">
-    <meta name="author" content="Cornelia Schulz">
+  <title>Lost in Translation</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Blog for code newbies">
+  <meta name="author" content="Cornelia Schulz">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/main.css">
 
-    <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
 </head>
 
 <body>
-    <div class="page-container">
-        <header>
-            <nav>
-                <div class="row">
-                    <ul class="nav">
-                        <li>
-                            <a id="logo" href="../index.html">Lost in Translation</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="feature">
-                <div class="feature-content">
-                    <h4></h4>
-                    <h2></h2>
-                    <p>Published by Cornelia Schulz in May 2018</p>
-                    <div class="social_media">
-                        <p>
-                            <a href="http://www.facebook.com/sharer/sharer.php?u=<URL>" target="_blank" class="share-btn facebook">
-                                <i class="fa fa-facebook-official"></i>
-                            </a>
-                            <a href="http://twitter.com/share?url=<URL>&text=<TEXT>&via=<VIA>" target="_blank" class="share-btn twitter">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a href="https://plus.google.com/share?url=<BTN>" target="_blank" class="share-btn google-plus">
-                                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="container">
-            <article>
-                <h1></h1>
-                <h2></h2>
-                <p></p>
-            </article>
+  <div class="page-container">
+    <header>
+      <nav>
+        <div class="row">
+          <ul class="nav">
+            <li>
+              <a id="logo" href="../index.html">Lost in Translation</a>
+            </li>
+          </ul>
         </div>
-        <footer>
+      </nav>
+      <div class="feature t6-2-feature">
+        <div class="feature-content">
+          <h4></h4>
+          <h2></h2>
+          <p>Published by Cornelia Schulz in May 2018</p>
+          <div class="social_media">
             <p>
-                <i class="fa fa-copyright" aria-hidden="true"></i> Cornelia Schulz</p>
-        </footer>
+              <a href="http://www.facebook.com/sharer/sharer.php?u=<URL>" target="_blank" class="share-btn facebook">
+                <i class="fa fa-facebook-official"></i>
+              </a>
+              <a href="http://twitter.com/share?url=<URL>&text=<TEXT>&via=<VIA>" target="_blank" class="share-btn twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://plus.google.com/share?url=<BTN>" target="_blank" class="share-btn google-plus">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <article>
+        <h1>Scope</h1>
+        <h3></h3>
+        <p>In JavaScript scope determines the visibility of a variable. There are two types of scope: local and global scope.</p>
+        <h3>Local scope</h3>
+        <p>
+          Each function in JavaScript creates its own scope or environment. So if you declare a variable inside a function, this variable
+          will only be visible or accessible inside the environment of this function. This means that variables with the
+          same name can be used in different functions because that's where they stay and that's what they are bound to.
+          Let's look at an example:
+        </p>
+        <pre>
+              <code>function makeSoup = new function(){
+    let ingredients = ["onions", "bacon", "lentils"];  
+        // ingredients is only visible within this function
+    ...
+}
+
+// if you tried to use ingredients here outside the function, 
+// the program will return undefined
+              </code>
+            </pre>
+
+        <p>
+
+        </p>
+        <h3>Global scope</h3>
+        <p>
+          When you are declaring a variable outside of any function, this variable can literally be accessed from anywhere in your
+          code.
+          <pre>
+              <code>let ingredients = ["onions", "bacon", "lentils"];  
+                //ingredients can be used here outside of any function
+
+function makeSoup = new function(){
+  for (var i = 0; i < ingredients.length; i++){  
+                // ingredients can also be used within this function
+    addToSoup(ingredients[i]);
+  }                              
+  ...
+}</code>
+            </pre>
+        </p>
+        <h3>Block statements</h3>
+        <p>
+          Block statements are things like if or switch statements or loops, such as for or while loops. They don't create their own
+          scope, so variables that are declared in the block statement belong to the same scope as the block statement itself.
+        </p>
+        <p>
+          ES6 introduced some new keywords for variables: let and const. They are used just like the keyword var. But unlike var, these
+          two keywords can create a local scope inside a block statement.
+        </p>
+        <pre>
+          <code>if ( 10 < 11){
+    var smallest = 10;
+    let biggest = 11;
+  }
+
+console.log(smallest)  // this will print 10
+console.log(biggest)  // this will not print because biggest is undefined
+          </code>
+        </pre>
+        <h3>What's the point of scope in JavaScript?</h3>
+        <p>
+          So, what's the point in limiting the visibility or accessibility of variables and not having everything available everywhere
+          in the code you write? The answer is that scope provides some level of security to your code. By using scope users
+          only have access to the stuff they really need to at a time. It will help improve efficiency and hopefully reduces
+          bugs.
+        </p>
+      </article>
     </div>
+    <footer>
+      <p>
+        <i class="fa fa-copyright" aria-hidden="true"></i> Cornelia Schulz</p>
+    </footer>
+  </div>
 </body>
+
 </html>

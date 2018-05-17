@@ -2,65 +2,109 @@
 <html lang="en">
 
 <head>
-    <title>Lost in Translation</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Blog for code newbies">
-    <meta name="author" content="Cornelia Schulz">
+  <title>Lost in Translation</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Blog for code newbies">
+  <meta name="author" content="Cornelia Schulz">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/main.css">
 
-    <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
 </head>
 
 <body>
-    <div class="page-container">
-        <header>
-            <nav>
-                <div class="row">
-                    <ul class="nav">
-                        <li>
-                            <a id="logo" href="../index.html">Lost in Translation</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="feature">
-                <div class="feature-content">
-                    <h4></h4>
-                    <h2></h2>
-                    <p>Published by Cornelia Schulz in May 2018</p>
-                    <div class="social_media">
-                        <p>
-                            <a href="http://www.facebook.com/sharer/sharer.php?u=<URL>" target="_blank" class="share-btn facebook">
-                                <i class="fa fa-facebook-official"></i>
-                            </a>
-                            <a href="http://twitter.com/share?url=<URL>&text=<TEXT>&via=<VIA>" target="_blank" class="share-btn twitter">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a href="https://plus.google.com/share?url=<BTN>" target="_blank" class="share-btn google-plus">
-                                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="container">
-            <article>
-                <h1></h1>
-                <h2></h2>
-                <p></p>
-            </article>
+  <div class="page-container">
+    <header>
+      <nav>
+        <div class="row">
+          <ul class="nav">
+            <li>
+              <a id="logo" href="../index.html">Lost in Translation</a>
+            </li>
+          </ul>
         </div>
-        <footer>
+      </nav>
+      <div class="feature t6-feature">
+        <div class="feature-content">
+          <h4></h4>
+          <h2></h2>
+          <p>Published by Cornelia Schulz in May 2018</p>
+          <div class="social_media">
             <p>
-                <i class="fa fa-copyright" aria-hidden="true"></i> Cornelia Schulz</p>
-        </footer>
+              <a href="http://www.facebook.com/sharer/sharer.php?u=<URL>" target="_blank" class="share-btn facebook">
+                <i class="fa fa-facebook-official"></i>
+              </a>
+              <a href="http://twitter.com/share?url=<URL>&text=<TEXT>&via=<VIA>" target="_blank" class="share-btn twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://plus.google.com/share?url=<BTN>" target="_blank" class="share-btn google-plus">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <article>
+        <h1>JavaScript language</h1>
+        <h3>Syntax</h3>
+        <p>There are a few things you will see over and over again when you are learning to use JavaScript. Here are a few examples
+          and their use cases:</p>
+        <h4>Parentheses ()</h4>
+        <ul>
+          <li>They are used in functions when you create functions: function myFunction() {}</li>
+          <li>Or when you execute the function: myFunction()</li>
+          <li>You also use them to list your conditions in if statements: if (x
+            < y){console.log( "you win!")}</li>
+              <li>They are needed when setting your conditions in for loops: for (var i=0; i
+                <10; i++) {console.log(i)}</li>
+                  <li>Or when setting the conditions in while loops: while(x
+                    <y) {}</li>
+                      <li>Or simply for order of mathematical operations x = 5 * (9+1)</li>
+        </ul>
+        <h4>Brackets []</h4>
+        <ul>
+          <li>You use brackets to create arrays: var shopping_list = ["milk", "butter", "apples"]</li>
+          <li>Then they are used to index into an array: shopping_list[1] --- this returns the second item in our array.</li>
+          <li>They are also used to access properties of an object: myObject["property"]</li>
+        </ul>
+        <h4>Braces {}</h4>
+        <ul>
+          <li>Braces are used when you create functions: function myFunction() { //make my function do stuff }</li>
+          <li>They are also used when creating objects: var fruit = { name: "apple", colour: "red"}</li>
+        </ul>
+        <h4>Single quotes ''</h4>
+        <ul>
+          <li>Single quotes are used to create strings: var str = 'I am a string'</li>
+          <li>They are also used when you print statements to the console: console.log('Print me')</li>
+          <li>Values of an object property also need to be wrapped into quotes: var dog = { name: 'Fiffy', colour: 'black'}</li>
+          <li>Or when you use bracket notation to access the property of an object: myObject['property']</li>
+        </ul>
+        <h4>Double quotes ""</h4>
+        <ul>
+          <li>Double quotes are used to create strings: var str = "I'm a string"</li>
+          <li>They are also used when you print statements to the console: console.log("Print me")</li>
+          <li>Values of an object property also need to be wrapped into quotes: var dog = { name: "Fiffy", colour: "black"}</li>
+          <li>Or when you use bracket notation to access the property of an object: myObject["property"]</li>
+        </ul>
+        <p>Note that single and double quotes are interchangeable in JavaScript. When you are writing English text, it is often
+          easier to use double quotes because a single quote may have to be escaped in sentences like var str = 'I\'m a string'.
+          When writing for JSON, double quotes should always be used. When you are writing HTML code inside JavaScript double
+          quotes should also be used.
+        </p>
+      </article>
     </div>
+    <footer>
+      <p>
+        <i class="fa fa-copyright" aria-hidden="true"></i> Cornelia Schulz</p>
+    </footer>
+  </div>
 </body>
+
 </html>
