@@ -45,7 +45,71 @@ nav {
 }
 
 .c1-feature {
-    background: url('../images/reflections.jpg')
+    background: url('../images/reflections.jpg');
+}
+
+.c1-2-feature {
+    background: url('../images/timehabits.jpg');
+}
+
+.c2-feature {
+    background: url('../images/emotionalIntelligence.jpg');
+}
+
+.c3-feature {
+    background: url('../images/meditationprocess.jpg');
+}
+
+.c4-feature {
+    background: url('../images/mindfulness.jpg');
+}
+
+.c5-feature {
+    background: url('../images/selfconfidence.jpg');
+}
+
+.c6-feature {
+    background: url('../images/control.jpg');
+}
+
+.c7-feature {
+    background: url('../images/motivation.jpg');
+}
+
+.c8-feature {
+    background: url('../images/connecting.jpg');
+}
+
+.c9-feature {
+    background: url('../images/leadership.jpg');
+}
+
+.t1-feature {
+    background: url('../images/htmlcss.jpg');
+}
+
+.t2-feature {
+    background: url('../images/htmlcss1.jpg');
+}
+
+.t3-feature {
+    background: url('../images/designtoweb.jpg');
+}
+
+.t4-feature {
+    background: url('../images/javascript.jpg');
+}
+
+.t5-feature {
+    background: url('../images/problemsolving.jpg');
+}
+
+.t6-feature {
+    background: url('../images/javascript-language.jpg');
+}
+
+.t6-feature {
+    background: url('../images/scope.jpg');
 }
 
 .feature {
